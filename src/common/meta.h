@@ -8,7 +8,7 @@
 #pragma once
 #ifndef ENG_META_H_
 #define ENG_META_H_
-#include <core/eng.h>
+#include <eng.h>
 #include "config.h"
 namespace eng {
 	template<typename T>
@@ -22,7 +22,6 @@ namespace eng {
 		Unit() {}
 
 		virtual void initialize(const Config &config) {
-
 		}
 
 		virtual bool test() const {

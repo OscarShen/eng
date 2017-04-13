@@ -8,7 +8,7 @@
 #pragma once
 #ifndef ENG_CONFIG_H_
 #define ENG_CONFIG_H_
-#include <core/eng.h>
+#include <eng.h>
 namespace eng {
 	void split(std::string str, std::vector<std::string> *strs, const std::string &seperator);
 	void trim(std::string &str);
@@ -35,6 +35,10 @@ namespace eng {
 
 		double get_double(std::string key) const {
 			return (double)std::atof(get_string(key).c_str());
+		}
+
+		Float get_Float(std::string key) const {
+			return (Float)std::atof(get_string(key).c_str());
 		}
 
 		int get_int(std::string key) const {
@@ -75,9 +79,9 @@ namespace eng {
 		DEFINE_GET(bool)
 		std::string get(std::string key, const std::string &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_string(key); }
 		std::string get(std::string key, const char *default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_string(key); }
-		Vector2 get(std::string key, const Vector2 &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec2(key); }
-		Vector3 get(std::string key, const Vector3 &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec3(key); }
-		Vector4 get(std::string key, const Vector4 &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec4(key); }
+		Vector2f get(std::string key, const Vector2f &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec2(key); }
+		Vector3f get(std::string key, const Vector3f &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec3(key); }
+		Vector4f get(std::string key, const Vector4f &default_val) const { if (data.find(key) == data.end()) { return default_val; } else return get_vec4(key); }
 
 		bool has_key(std::string key) const {
 			return data.find(key) != data.end();
@@ -132,7 +136,7 @@ namespace eng {
 		}
 
 		Vector3f get_vec3(std::string key) const {
-			Vector3 ret;
+			Vector3f ret;
 			sscanf_s(get_string(key).c_str(), "(%f,%f,%f)", &ret.x, &ret.y, &ret.z);
 			return ret;
 		}
@@ -144,7 +148,7 @@ namespace eng {
 		}
 
 		Vector4f get_vec4(std::string key) const {
-			Vector4 ret;
+			Vector4f ret;
 			sscanf_s(get_string(key).c_str(), "(%f,%f,%f,%f)", &ret.x, &ret.y, &ret.z, &ret.w);
 			return ret;
 		}
@@ -170,21 +174,21 @@ namespace eng {
 			return *this;
 		}
 
-		Config &set(std::string name, Vector2 val) {
+		Config &set(std::string name, Vector2f val) {
 			std::stringstream ss;
 			ss << "(" << val.x << "," << val.y << ")";
 			data[name] = ss.str();
 			return *this;
 		}
 
-		Config &set(std::string name, Vector3 val) {
+		Config &set(std::string name, Vector3f val) {
 			std::stringstream ss;
 			ss << "(" << val.x << "," << val.y << "," << val.z << ")";
 			data[name] = ss.str();
 			return *this;
 		}
 
-		Config &set(std::string name, Vector4 val) {
+		Config &set(std::string name, Vector4f val) {
 			std::stringstream ss;
 			ss << "(" << val.x << "," << val.y << "," << val.z << "," << val.w << ")";
 			data[name] = ss.str();
