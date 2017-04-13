@@ -15,18 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\core\eng.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\core\primitive.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\core\camera.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\core\sampler.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\common\config.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -36,22 +24,1599 @@
     <ClInclude Include="src\math\linalg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\common\asset_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\contants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\model_loader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\stb_image_write.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\stb_truetype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Compiler\poppack1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Compiler\pstdint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Compiler\pushpack1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\port\AndroidJNI\AndroidJNIIOSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\ai_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\anim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\cexport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\cfileio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\cimport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\color4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\DefaultLogger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\defs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Exporter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Importer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\importerdesc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\IOStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\IOSystem.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\light.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\Logger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\LogStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\matrix3x3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\matrix4x4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\metadata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\NullLogger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\postprocess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\ProgressHandler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\quaternion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\vector2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\vector3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\assimp\version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\embree2\rtcore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\embree2\rtcore_geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\embree2\rtcore_geometry_user.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\embree2\rtcore_ray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\embree2\rtcore_scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_features.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_fixes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_swizzle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_swizzle_func.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\_vectorize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\func_vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\intrinsic_vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\setup.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_float.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_gentype.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_half.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_int.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat2x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat2x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat2x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat3x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat3x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat3x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat4x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat4x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_mat4x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_vec.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_vec2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_vec3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\detail\type_vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\bitfield.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\constants.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\epsilon.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\matrix_access.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\matrix_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\matrix_inverse.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\matrix_transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\random.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\reciprocal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\round.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\type_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\type_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\ulp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtc\vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\associated_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\bit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\closest_point.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\color_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\color_space_YCoCg.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\compatibility.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\component_wise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\dual_quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\euler_angles.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\extend.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\extented_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\fast_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\fast_square_root.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\fast_trigonometry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\gradient_paint.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\handed_coordinate_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\intersect.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\io.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\log_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_cross_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_decompose.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_interpolation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_major_storage.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_operation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\matrix_transform_2d.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\mixed_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\multiple.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\norm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\normal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\normalize_dot.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\number_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\optimum_pow.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\orthonormalize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\perpendicular.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\polar_coordinates.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\projection.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\range.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\raw_data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\rotate_vector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\scalar_multiplication.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\scalar_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\simd_mat4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\simd_quat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\simd_vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\spline.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\std_based_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\string_cast.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\transform2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\type_aligned.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\vector_angle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\vector_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\gtx\wrap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\ext.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\glm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat2x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat2x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat2x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat3x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat3x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat3x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat4x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat4x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\mat4x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\vec2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\vec3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\glm\vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\arg_from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\arg_to_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\arg_to_python_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\as_to_python_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\builtin_converters.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\constructor_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\context_result_converter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\convertible_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\implicit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\obj_mgr_arg_from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\object_manager.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\pointer_type_id.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\pyobject_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\pyobject_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\pytype_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\pytype_object_mgr_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\registered.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\registered_pointee.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\registrations.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\registry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\return_from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\rvalue_from_python_data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\shared_ptr_deleter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\shared_ptr_from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\shared_ptr_to_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\converter\to_python_function_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\aix_init_module.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\api_placeholder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\borrowed_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\caller.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\config.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\construct.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\convertible.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\copy_ctor_mutates_rhs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\cv_category.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\dealloc.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\decorated_type_id.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\decref_guard.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\def_helper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\def_helper_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\defaults_def.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\defaults_gen.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\dependent.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\destroy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\enable_if.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\exception_handler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\force_instantiate.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\if_else.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\indirect_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\invoke.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\is_auto_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\is_shared_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\is_wrapper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\is_xxx.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\make_keyword_range_fn.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\make_tuple.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\map_entry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\mpl_lambda.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\msvc_typeinfo.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\none.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\not_specified.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\nullary_function_adaptor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\operator_id.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\overloads_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\pointee.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\prefix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\preprocessor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\python_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\python22_fixed.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\raw_pyobject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\referent_storage.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\result.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\scope.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\sfinae.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\signature.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\string_literal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\target.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\translate_exception.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\type_list.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\type_list_impl.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\unwind_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\unwrap_type_id.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\unwrap_wrapper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\value_arg.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\value_is_shared_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\value_is_xxx.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\void_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\void_return.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\wrap_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\detail\wrapper_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\add_to_namespace.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\class.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\class_detail.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\class_metadata.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\class_wrapper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\enum_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\find_instance.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\forward.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\function_doc_signature.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\function_handle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\function_object.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\inheritance.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\inheritance_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\instance.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\iterator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\iterator_core.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\life_support.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\make_holder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\make_instance.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\make_ptr_instance.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\pickle_support.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\pointer_holder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\py_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\stl_iterator_core.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\value_holder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object\value_holder_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\suite\indexing\detail\indexing_suite_detail.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\suite\indexing\container_utils.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\suite\indexing\indexing_suite.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\suite\indexing\map_indexing_suite.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\suite\indexing\vector_indexing_suite.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\arg_from_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\args.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\args_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\back_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\base_type_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\bases.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\borrowed.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\call.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\call_method.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\cast.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\class.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\class_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\copy_const_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\copy_non_const_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\data_members.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\def.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\def_visitor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\default_call_policies.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\dict.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\docstring_options.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\enum.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\errors.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\exception_translator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\exec.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\extract.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\handle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\handle_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\has_back_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\implicit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\import.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\init.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\instance_holder.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\iterator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\list.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\long.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\lvalue_from_pytype.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\make_constructor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\make_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\manage_new_object.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\module.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\module_init.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\numeric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_attributes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_call.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_core.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_items.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_operators.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_protocol.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_protocol_core.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\object_slices.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\opaque_pointer_converter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\operators.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\other.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\overloads.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\override.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\pointee.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\proxy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\pure_virtual.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\raw_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\refcount.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\reference_existing_object.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\register_ptr_to_python.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\return_arg.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\return_by_value.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\return_internal_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\return_opaque_pointer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\return_value_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\scope.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\self.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\signature.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\slice.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\slice_nil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\ssize_t.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\stl_iterator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\str.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\tag.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\to_python_converter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\to_python_indirect.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\to_python_value.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\tuple.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\type_id.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\with_custodian_and_ward.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\python\wrapper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\threading.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\fresnel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\primitive.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\print.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\core\primitive.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\core\sampler.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\common\config.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\test\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\common\meta.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\util\model_loader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\linalg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\glm\detail\glm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\threading.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\fresnel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="external\include\assimp\color4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\material.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\matrix3x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\matrix4x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\vector2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\assimp\vector3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_geometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_matrix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_packing.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_trigonometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\func_vector_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_geometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_matrix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_trigonometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\intrinsic_vector_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_gentype.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_half.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat2x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat2x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat2x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat3x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat3x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat3x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat4x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat4x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_mat4x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec4_avx.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec4_avx2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\detail\type_vec4_sse2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\bitfield.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\constants.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\epsilon.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\matrix_access.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\matrix_inverse.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\matrix_transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\packing.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\random.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\reciprocal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\round.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\type_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\type_ptr.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\ulp.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtc\vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\associated_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\bit.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\closest_point.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\color_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\color_space_YCoCg.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\compatibility.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\component_wise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\dual_quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\euler_angles.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\extend.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\extented_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\fast_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\fast_square_root.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\fast_trigonometry.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\gradient_paint.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\handed_coordinate_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\intersect.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\io.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\log_base.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_cross_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_decompose.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_interpolation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_major_storage.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_operation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\matrix_transform_2d.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\mixed_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\multiple.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\norm.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\normal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\normalize_dot.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\number_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\optimum_pow.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\orthonormalize.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\perpendicular.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\polar_coordinates.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\projection.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\raw_data.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\rotate_normalized_axis.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\rotate_vector.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\scalar_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\simd_mat4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\simd_quat.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\simd_vec4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\spline.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\std_based_type.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\string_cast.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\transform2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\type_aligned.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\vector_angle.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\vector_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="external\include\glm\gtx\wrap.inl">
+      <Filter>头文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
