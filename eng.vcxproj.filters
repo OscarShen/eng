@@ -1239,6 +1239,12 @@
     <ClInclude Include="src\util\print.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\core\sampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\intersection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common\config.cpp">
@@ -1265,7 +1271,16 @@
     <ClCompile Include="src\core\camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\test.cpp">
+    <ClCompile Include="src\core\sampler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\examples\simple\pinhole.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\primitive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\examples\simple\spheres.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

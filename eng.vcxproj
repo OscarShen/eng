@@ -419,7 +419,9 @@
     <ClInclude Include="src\common\config.h" />
     <ClInclude Include="src\common\meta.h" />
     <ClInclude Include="src\core\camera.h" />
+    <ClInclude Include="src\core\intersection.h" />
     <ClInclude Include="src\core\primitive.h" />
+    <ClInclude Include="src\core\sampler.h" />
     <ClInclude Include="src\eng.h" />
     <ClInclude Include="src\math\linalg.h" />
     <ClInclude Include="src\physics\contants.h" />
@@ -433,10 +435,13 @@
     <ClCompile Include="src\common\config.cpp" />
     <ClCompile Include="src\common\meta.cpp" />
     <ClCompile Include="src\core\camera.cpp" />
+    <ClCompile Include="src\core\primitive.cpp" />
+    <ClCompile Include="src\core\sampler.cpp" />
+    <ClCompile Include="src\examples\simple\pinhole.cpp" />
+    <ClCompile Include="src\examples\simple\spheres.cpp" />
     <ClCompile Include="src\math\linalg.cpp" />
     <ClCompile Include="src\physics\fresnel.cpp" />
     <ClCompile Include="src\system\threading.cpp" />
-    <ClCompile Include="src\test\test.cpp" />
     <ClCompile Include="src\util\model_loader.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -625,7 +630,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\cpp\eng\external\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\cpp\ThirdParty\X64\include;D:\cpp\eng\external\include;D:\cpp\eng\src;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\cpp\eng\external\lib;D:\cpp\ThirdParty\X64\debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -696,6 +702,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gtest.lib;gtest_main.lib;embree.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

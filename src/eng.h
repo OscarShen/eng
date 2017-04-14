@@ -50,10 +50,20 @@ namespace eng {
 	typedef glm::mat3 Matrix3f;
 	typedef glm::mat4 Matrix4f;
 
-	constexpr Float pi = 3.1415926535898f;
 	constexpr Float epsilon = 1e-6f;
 
-	const float fInfinity = std::numeric_limits<Float>::max();
+	constexpr float fInfinity = std::numeric_limits<Float>::max();
+	constexpr Float shaow_epsilon = 0.0001f;
+	constexpr Float pi = 3.14159265358979323846f;
+	constexpr Float inv_pi = 0.31830988618379067154f;
+	constexpr Float inv2pi = 0.15915494309189533577f;
+	constexpr Float inv4pi = 0.07957747154594766788f;
+	constexpr Float pi_over_2 = 1.57079632679489661923f;
+	constexpr Float pi_over_4 = 0.78539816339744830961f;
+	constexpr Float sqrt_square = 1.41421356237309504880f;
+
+	class Shape;
+
 }
 
 #endif // !ENG_H_

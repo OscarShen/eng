@@ -10,7 +10,7 @@
 #define ENG_PRINT_H_
 #include <eng.h>
 namespace eng {
-	std::ostream &operator<<(std::ostream &os, const Vector3f &v) {
+	inline std::ostream &operator<<(std::ostream &os, const Vector3f &v) {
 		os << " [" << v.x << ", " << v.y << ", " << v.z << "] ";
 		return os;
 	}
