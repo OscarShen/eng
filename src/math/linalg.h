@@ -59,9 +59,10 @@ namespace eng {
 
 	// 矩阵和三维向量相乘， w=0 表示向量， w=1 表示点
 	inline Vector3f multiply_matrix4(const Matrix4f &m, const Vector3f &v, Float w) {
-		Vector4f tmp(v, w);
-		tmp = m * tmp;
-		return Vector3f(tmp.x, tmp.y, tmp.z);
+		//Vector4f tmp(v, w);
+		//tmp = m * tmp;
+		//return Vector3f(tmp.x, tmp.y, tmp.z);
+		return Vector3f(m * Vector4f(v, w));
 	}
 
 	// 角度转弧度
@@ -250,6 +251,18 @@ namespace eng {
 		return true;
 	}
 
+	// 射线与平面交点
+	inline bool intersect_plane(const Vector3f &plane_normal, const Vector3f &plane_anchor, const Vector3f &orig, const Vector3f &dir, Float &t) {
+		Float denom = abs(dot(plane_normal, dir));
+		if (denom > 1e-6f) {
+			Vector3f L = plane_anchor - orig;
+			if(dot(L, dir) <= 0)
+				return false;
+			t = abs(dot(L, plane_normal)) / denom;
+			return true;
+		}
+		return false;
+	}
 }
 
 #endif // !ENG_LINALG_H_

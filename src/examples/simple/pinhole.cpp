@@ -19,7 +19,7 @@ void pinhole() {
 	}
 
 	auto film = camera->get_film().get();
-	std::ofstream ofs("./result/out.ppm", std::ios::out | std::ios::binary);
+	std::ofstream ofs("./result/pinhole.ppm", std::ios::out | std::ios::binary);
 	ofs << "P6\n" << camera->get_width() << " " << camera->get_height() << "\n255\n";
 	for (int i = 0; i < camera->get_width() * camera->get_height(); ++i) {
 		char r = (char)(255 * clamp(film->frame_buffer[i].x));
@@ -30,3 +30,7 @@ void pinhole() {
 
 	ofs.close();
 }
+
+//void main() {
+//	pinhole();
+//}

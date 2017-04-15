@@ -43,7 +43,62 @@ namespace eng {
 			iset = transform(local2world, world2local, Intersection(p_hit, normal, Vector2f(u, v), this));
 			return true;
 		}
+
+		virtual Bound3f get_bound() const override {
+			return Bound3f(Vector3f(-radius), Vector3f(radius));
+		}
+
 	};
 
 	ENG_IMPLEMENTATION(Shape, Sphere, "sphere");
+
+	class Disk : public Shape
+	{
+	private:
+		Float radius, radius_square; // 平面宽度
+
+	public:
+		virtual void initialize(const Config &config) override {
+			Shape::initialize(config);
+			this->radius = config.get_Float("radius");
+			this->radius_square = radius * radius;
+		}
+
+		virtual bool intersect(const Ray &ray, Float &t_hit, Intersection &iset) const override {
+			Ray local_ray = world2local * ray;
+			Float t = 0;
+
+			Vector3f p_hit;
+			Float distance_suqare;
+			Vector3f normal = Vector3f(0.0f, 0.0f, 1.0f);
+			// 默认圆盘中心位于原点，法向量指向Z轴正方向
+			if (intersect_plane(normal, Vector3f(0.0f), local_ray.orig, local_ray.dir, t)) {
+				t_hit = t;
+
+				p_hit = local_ray.get_point(t);
+				distance_suqare = dot(p_hit, p_hit);
+				if (distance_suqare > radius_square)
+					return false;
+
+				if (dot(normal, local_ray.dir) > 0)
+					normal = -normal;
+				Float phi = acos(dot(normalize(p_hit), Vector3f(1.0f, 0.0f, 0.0f)));
+				if (p_hit.y < 0) { // 说明角度大于 pi
+					phi = 2 * pi - phi;
+				}
+				Float u = phi / (2 * pi);
+				Float v = sqrt(distance_suqare) / radius;
+
+				iset = transform(local2world, world2local, Intersection(p_hit, normal, Vector2f(u, v), this));
+				return true;
+			}
+			return false;
+		}
+
+		virtual Bound3f get_bound() const override {
+			return Bound3f(Vector3f(-radius, -radius, -1e-6f), Vector3f(radius, radius, 1e-6f));
+		}
+	};
+
+	ENG_IMPLEMENTATION(Shape, Disk, "disk");
 }

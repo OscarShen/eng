@@ -22,8 +22,8 @@ bool trace(const Ray &ray, const std::vector<std::shared_ptr<Shape>> &shapes, Fl
 
 Vector3f sample(const Ray &ray, const Intersection &isec) {
 	Float scale(8.0f);
-	Float pattern = (fmodf(isec.uv.x * scale, 1.0f) > 0.5f) ^ (fmodf(isec.uv.y * scale, 1.0f) > 0.5f);
-	Vector3f color = std::max(0.0f, dot(isec.normal, -ray.dir)) * mix(isec.shape->color, isec.shape->color * 0.8f, pattern);
+	bool pattern = (fmodf(isec.uv.x * scale, 1.0f) > 0.5f) ^ (fmodf(isec.uv.y * scale, 1.0f) > 0.5f);
+	Vector3f color = std::max(0.0f, dot(isec.normal, -ray.dir)) * mix(isec.shape->color, isec.shape->color * 0.8f, (Float)pattern);
 
 	return color;
 }
@@ -57,7 +57,7 @@ void spheres() {
 	}
 
 	auto film = camera->get_film().get();
-	std::ofstream ofs("./result/out3.ppm", std::ios::out | std::ios::binary);
+	std::ofstream ofs("./result/spheres.ppm", std::ios::out | std::ios::binary);
 	ofs << "P6\n" << camera->get_width() << " " << camera->get_height() << "\n255\n";
 	for (int i = 0; i < camera->get_width() * camera->get_height(); ++i) {
 		char r = (char)(255 * clamp(film->frame_buffer[i].x));
