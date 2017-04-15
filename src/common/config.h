@@ -219,7 +219,7 @@ namespace eng {
 		template <typename T>
 		static std::string get_ptr_string(T *ptr) {
 			std::stringstream ss;
-			ss << typeid(T).name() << "\t" << reinterpret_cast<uint64>(ptr);
+			ss << typeid(T).name() << "\t" << reinterpret_cast<unsigned long long>(ptr);
 			return ss.str();
 		}
 

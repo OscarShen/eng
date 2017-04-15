@@ -422,6 +422,7 @@
     <ClInclude Include="src\core\intersection.h" />
     <ClInclude Include="src\core\primitive.h" />
     <ClInclude Include="src\core\sampler.h" />
+    <ClInclude Include="src\core\triangle.h" />
     <ClInclude Include="src\eng.h" />
     <ClInclude Include="src\math\linalg.h" />
     <ClInclude Include="src\physics\contants.h" />
@@ -437,6 +438,8 @@
     <ClCompile Include="src\core\camera.cpp" />
     <ClCompile Include="src\core\primitive.cpp" />
     <ClCompile Include="src\core\sampler.cpp" />
+    <ClCompile Include="src\core\triangle.cpp" />
+    <ClCompile Include="src\examples\simple\cow.cpp" />
     <ClCompile Include="src\examples\simple\pinhole.cpp" />
     <ClCompile Include="src\examples\simple\spheres.cpp" />
     <ClCompile Include="src\math\linalg.cpp" />

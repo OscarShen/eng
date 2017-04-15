@@ -7,7 +7,7 @@ namespace eng {
 	{
 		// Read file via Assimp
 		Assimp::Importer importer;
-		const aiScene *scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
+		const aiScene *scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_GenNormals);
 		// Check for errors
 		if (!scene || scene->mFlags == AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
 		{
@@ -42,8 +42,11 @@ namespace eng {
 		{
 			// Positions
 			mesh.vertices->push_back(Vector3f(assimp_mesh->mVertices[i].x, assimp_mesh->mVertices[i].y, assimp_mesh->mVertices[i].z));
-			// Normals
-			mesh.normals->push_back(Vector3f(assimp_mesh->mNormals[i].x, assimp_mesh->mNormals[i].y, assimp_mesh->mNormals[i].z));
+				// Normals
+			assimp_mesh->mNormals ?
+				mesh.normals->push_back(Vector3f(assimp_mesh->mNormals[i].x, assimp_mesh->mNormals[i].y, assimp_mesh->mNormals[i].z)) :
+				mesh.normals->push_back(Vector3f(0));
+
 			// Texture Coordinates
 			if (assimp_mesh->mTextureCoords[0]) // Does the mesh contain texture coordinates?
 			{

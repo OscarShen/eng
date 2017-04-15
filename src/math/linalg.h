@@ -9,6 +9,7 @@
 #ifndef ENG_LINALG_H_
 #define ENG_LINALG_H_
 #include <eng.h>
+#include <util/print.h>
 namespace eng {
 	// 点乘
 	inline Float dot(const Vector3f &a, const Vector3f &b) {
@@ -68,12 +69,6 @@ namespace eng {
 	// 角度转弧度
 	constexpr Float radians(Float degrees) {
 		return degrees * static_cast<Float>(0.01745329251994329576923690768489);
-	}
-
-
-	template<typename T>
-	inline T abs(const T &a) {
-		return std::abs(a);
 	}
 
 	template<typename T>
@@ -213,6 +208,18 @@ namespace eng {
 		return ret;
 	}
 
+	// 生成变换矩阵
+	inline Matrix4f get_transform(const Vector3f *translate = nullptr, const Vector3f *rotate = nullptr, const Vector3f *scale = nullptr) {
+		Matrix4f transform = Matrix4f();
+		if (scale)
+			transform = matrix4_scale(transform, *scale);
+		if (rotate)
+			transform = matrix4_rotate_eular(transform, *rotate);
+		if (translate)
+			transform = matrix4_translate(transform, *translate);
+		return transform;
+	}
+
 	template<typename T>
 	inline T hypot2(const T &x, const T &y) {
 		return x * x + y * y;
@@ -253,15 +260,41 @@ namespace eng {
 
 	// 射线与平面交点
 	inline bool intersect_plane(const Vector3f &plane_normal, const Vector3f &plane_anchor, const Vector3f &orig, const Vector3f &dir, Float &t) {
-		Float denom = abs(dot(plane_normal, dir));
+		Float denom = std::abs(dot(plane_normal, dir));
 		if (denom > 1e-6f) {
 			Vector3f L = plane_anchor - orig;
 			if(dot(L, dir) <= 0)
 				return false;
-			t = abs(dot(L, plane_normal)) / denom;
+			t = std::abs(dot(L, plane_normal)) / denom;
 			return true;
 		}
 		return false;
+	}
+
+	// 射线与三角形相交
+	inline bool intersect_triangle(const Vector3f &orig, const Vector3f &dir, const Vector3f &v0, const Vector3f &v1, const Vector3f &v2,
+		Float &t, Float &u, Float &v) {
+		Vector3f v0v1 = v1 - v0;
+		Vector3f v0v2 = v2 - v0;
+		Vector3f pvec = cross(dir,v0v2);
+		float det = dot(v0v1, pvec);
+
+		// ray and triangle are parallel if det is close to 0
+		if (fabs(det) < epsilon) return false;
+
+		float invDet = 1 / det;
+
+		Vector3f tvec = orig - v0;
+		u = dot(tvec, pvec) * invDet;
+		if (u < 0 || u > 1) return false;
+
+		Vector3f qvec = cross(tvec, v0v1);
+		v = dot(dir, qvec) * invDet;
+		if (v < 0 || u + v > 1) return false;
+
+		t = dot(v0v2, qvec) * invDet;
+
+		return true;
 	}
 }
 

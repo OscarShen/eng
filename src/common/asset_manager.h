@@ -8,7 +8,7 @@
 #pragma once
 #ifndef ENG_ASSET_MANAGER_H_
 #define ENG_ASSET_MANAGER_H_
-#include <core/eng.h>
+#include <eng.h>
 namespace eng {
 
 	class AssetManager

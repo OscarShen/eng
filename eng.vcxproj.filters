@@ -1245,6 +1245,9 @@
     <ClInclude Include="src\core\intersection.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\core\triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common\config.cpp">
@@ -1281,6 +1284,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\examples\simple\spheres.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\examples\simple\cow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

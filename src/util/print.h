@@ -10,6 +10,11 @@
 #define ENG_PRINT_H_
 #include <eng.h>
 namespace eng {
+	inline std::ostream &operator<<(std::ostream &os, const Vector2f &v) {
+		os << " [" << v.x << ", " << v.y  << "] ";
+		return os;
+	}
+
 	inline std::ostream &operator<<(std::ostream &os, const Vector3f &v) {
 		os << " [" << v.x << ", " << v.y << ", " << v.z << "] ";
 		return os;

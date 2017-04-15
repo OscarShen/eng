@@ -15,6 +15,7 @@
 #include <util/print.h>
 namespace eng {
 
+	// 光线
 	class Ray
 	{
 	public:
@@ -30,6 +31,7 @@ namespace eng {
 		return Ray(multiply_matrix4(transform, ray.orig, 1), multiply_matrix4(transform, ray.dir, 0));
 	}
 
+	// 三维包围盒
 	template <typename T>
 	class Bound3
 	{
@@ -103,7 +105,9 @@ namespace eng {
 		return ret;
 	}
 
-	class Shape : public Unit
+
+	// 几何形状
+	class Shape
 	{
 	public:
 		Matrix4f local2world;
@@ -111,21 +115,46 @@ namespace eng {
 		Vector3f color; // 临时使用
 
 	public:
-		virtual void initialize(const Config &config) override {
-			Vector3f translate = config.get("translate", Vector3f(0.0f));
-			Vector3f scale = config.get("scale", Vector3f(1.0f));
-			Vector3f rotate = config.get("rotate", Vector3f(0.0f));
-			local2world = matrix4_scale(local2world, scale);
-			local2world = matrix4_rotate_eular(local2world, rotate);
-			local2world = matrix4_translate(local2world, translate);
-			world2local = inverse(local2world);
-			color = Vector3f(rand(), rand(), rand());
+		Shape(const Matrix4f &local2world, const Matrix4f &world2local) : local2world(local2world), world2local(world2local) {
+			color = Vector3f(rand(), rand(), rand()); // 临时使用
 		}
 		virtual bool intersect(const Ray &ray, Float &t_hit, Intersection &iset) const = 0;
 		virtual Bound3f get_bound() const = 0;
 	};
 
-	ENG_INTERFACE(Shape);
+	class Sphere : public Shape
+	{
+	private:
+		//Vector3f center;
+		Float radius, radius_square;// 半径平方
+
+	public:
+		Sphere(const Matrix4f &local2world, const Matrix4f &world2local, Float radius) 
+			: Shape(local2world, world2local), radius(radius), radius_square(radius * radius) {}
+
+		virtual bool intersect(const Ray &ray, Float &t_hit, Intersection &iset) const override;
+
+		virtual Bound3f get_bound() const override {
+			return Bound3f(Vector3f(-radius), Vector3f(radius));
+		}
+	};
+
+	class Disk : public Shape
+	{
+	private:
+		Float radius;
+
+	public:
+		// 默认圆盘中心位于原点，法向量指向Z轴正方向
+		Disk(const Matrix4f &local2world, const Matrix4f &world2local, Float radius)
+			: Shape(local2world, world2local), radius(radius) {}
+
+		virtual bool intersect(const Ray &ray, Float &t_hit, Intersection &iset) const override;
+
+		virtual Bound3f get_bound() const override {
+			return Bound3f(Vector3f(-radius, -radius, -1e-6f), Vector3f(radius, radius, 1e-6f));
+		}
+	};
 }
 
 #endif // !ENG_PRIMITIVE_H_

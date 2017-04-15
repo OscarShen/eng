@@ -24,10 +24,10 @@ namespace eng {
 		std::shared_ptr<std::vector<Vector3f>> vertices;
 		std::shared_ptr<std::vector<Vector3f>> normals;
 		std::shared_ptr<std::vector<Vector2f>> uvs;
-		std::shared_ptr<std::vector<unsigned>> indices;
-		unsigned num_triangles;
+		std::shared_ptr<std::vector<int>> indices;
+		int num_triangles;
 		ModelData() :vertices(new std::vector<Vector3f>()), normals(new std::vector<Vector3f>()),
-			uvs(new std::vector<Vector2f>()), indices(new std::vector<unsigned>()),
+			uvs(new std::vector<Vector2f>()), indices(new std::vector<int>()),
 			num_triangles(0) {}
 	};
 
